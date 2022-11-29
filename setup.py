@@ -31,7 +31,7 @@ setup(
         [console_scripts]
         kgn=kgn.cli:cli
     """,
-    install_requires=["click", "textual", "requests", "spacy"],
+    install_requires=["click", "requests", "spacy", "tk"],
     extras_require={
         "test": ["pytest"]
     },
