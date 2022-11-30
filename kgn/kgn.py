@@ -32,7 +32,7 @@ def shorten_comment(comment, uri):
 query = ''
 
 
-def kgn(query, use_gui):
+def kgn():
     print("Knowledge Graph Navigator (note: only runs in a terminal)")
     while True:
         query = get_query()
@@ -71,6 +71,8 @@ def kgn(query, use_gui):
         for relationship in relation_data:
             print(relationship[0] + ' --> ' + relationship[2][1] + ' --> ' + relationship[1])
 
+def kgn_console(query, use_gui):
+    print("kgn_console is not implemented")
 
 kgn()
 
