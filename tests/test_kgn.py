@@ -1,10 +1,11 @@
 import spacy
 from os import system
+
+from kgn.cli import cli
+
 system("python -m spacy download en_core_web_sm")
 
 from click.testing import CliRunner
-from kgn.cli import cli
-
 
 def test_version():
     runner = CliRunner()

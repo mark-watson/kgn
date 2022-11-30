@@ -1,6 +1,6 @@
 import click
 
-from .kgn import *
+from kgn import *
 
 @click.command()
 @click.version_option()
