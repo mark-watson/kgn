@@ -7,7 +7,7 @@
 
 # Interactive exploration of Knowledge Graphs using natural language
 
-This is a tool that interactively explores the DBPedia Knowledge Graph. The user inputs a list of people, companies, places, etc. and entities in DBPedia are identified and relations are found between these entities.
+This is a tool that interactively explores the DBPedia Knowledge Graph. The user inputs a list of people, companies, places, etc. and entities in DBPedia are identified using SPARQL queries and a spaCy language deep learning language model and relations are also found between these entities. A local SQlite3 database is used to cache SPARQL query results.
 
 This code is an example program in my book "Practical Python Artificial Intelligence Programming" [https://leanpub.com/pythonai](https://leanpub.com/pythonai). You can read this book and all of my recent eBooks at my website [https://markwatson.com](https://markwatson.com).
 
