@@ -1,5 +1,5 @@
-from sparql import dbpedia_sparql
-from colorize import colorize_sparql
+from .sparql import dbpedia_sparql
+from .colorize import colorize_sparql
 
 def dbpedia_get_entities_by_name(name, dbpedia_type):
     sparql = (

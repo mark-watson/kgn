@@ -1,2 +1,4 @@
 PyInquirer
-textui
+readchar
+spacy
+requests

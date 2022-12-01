@@ -1,5 +1,5 @@
 import requests
-from cache import fetch_result_dbpedia, save_query_results_dbpedia
+from .cache import fetch_result_dbpedia, save_query_results_dbpedia
 wikidata_endpoint = 'https://query.wikidata.org/bigdata/namespace/wdq/sparql'
 dbpedia_endpoint = 'https://dbpedia.org/sparql'
 

@@ -1,5 +1,5 @@
-from sparql import dbpedia_sparql
-from colorize import colorize_sparql
+from .sparql import dbpedia_sparql
+from .colorize import colorize_sparql
 
 def flatten(a_list):
     return [item for items in a_list for item in items]

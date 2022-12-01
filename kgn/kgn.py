@@ -1,10 +1,17 @@
 from pprint import pprint
-from textui import select_entities, get_query
-from kgnutils import dbpedia_get_entities_by_name
-from relationships import entity_results_to_relationship_links
+from .kgnutils import dbpedia_get_entities_by_name
+from .textui import select_entities, get_query
+from .relationships import entity_results_to_relationship_links
 import spacy
 
-nlp_model = spacy.load('en_core_web_sm')
+try:
+  nlp_model = spacy.load('en_core_web_sm')
+except:
+  print("Loading spaCy model file...")
+  from os import system
+  system("python -m spacy download en_core_web_sm")
+  nlp_model = spacy.load('en_core_web_sm')
+
 
 def entities_in_text(s):
     doc = nlp_model(s)
@@ -74,5 +81,4 @@ def kgn():
 def kgn_console(query, use_gui):
     print("kgn_console is not implemented")
 
-kgn()
 

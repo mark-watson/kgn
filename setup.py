@@ -1,7 +1,7 @@
 from setuptools import setup
 import os
 
-VERSION = "0.4"
+VERSION = "0.46"
 
 def get_long_description():
     with open(
@@ -30,7 +30,7 @@ setup(
         [console_scripts]
         kgn=kgn.cli:cli
     """,
-    install_requires=["click", "requests", "spacy", "tk"],
+    install_requires=["click", "requests", "spacy", "readchar"],
     extras_require={
         "test": ["pytest"]
     },
