@@ -1,9 +1,5 @@
 # kgn
 
-[![PyPI](https://img.shields.io/pypi/v/kgn.svg)](https://pypi.org/project/kgn/)
-[![Changelog](https://img.shields.io/github/v/release/mark-watson/kgn?include_prereleases&label=changelog)](https://github.com/mark-watson/kgn/releases)
-[![Tests](https://github.com/mark-watson/kgn/workflows/Test/badge.svg)](https://github.com/mark-watson/kgn/actions?query=workflow%3ATest)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/mark-watson/kgn/blob/master/LICENSE)
 
 # Interactive exploration of Knowledge Graphs using natural language
 
