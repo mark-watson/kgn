@@ -30,6 +30,10 @@ You can also use:
 
     uv run -m kgn --help
 
+You can run the tests using:
+
+    uv run pytest
+
 ## Example output
 
 Most output is removed fro brevity:
