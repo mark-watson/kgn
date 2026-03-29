@@ -1,0 +1,29 @@
+[project]
+name = "kgn"
+version = "0.46"
+description = "Interactive exploration of Knowledge Graphs using natural language"
+readme = "README.md"
+requires-python = ">=3.14"
+authors = [
+    { name = "Mark Watson" }
+]
+license = { text = "Apache License, Version 2.0" }
+dependencies = [
+    "click>=8.3.1",
+    "readchar>=4.2.1",
+    "requests>=2.33.0",
+    "spacy>=3.8.13",
+]
+
+[project.urls]
+Homepage = "https://github.com/mark-watson/kgn"
+Issues = "https://github.com/mark-watson/kgn/issues"
+CI = "https://github.com/mark-watson/kgn/actions"
+Changelog = "https://github.com/mark-watson/kgn/releases"
+
+[project.scripts]
+kgn = "kgn.cli:cli"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

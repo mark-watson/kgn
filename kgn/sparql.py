@@ -17,7 +17,7 @@ def do_query_helper(endpoint, query):
     results = json_data['results']
     if 'bindings' in results:
         bindings = results['bindings']
-        qr = [[[var, binding[var]['value']] for var in vars] for binding in bindings]
+        qr = [[[var, binding.get(var, {}).get('value', '')] for var in vars] for binding in bindings]
         save_query_results_dbpedia(query, qr)
         return qr
     return []

@@ -18,17 +18,17 @@ This code is derived from a Common Lisp example in my book "Loving Common Lisp, 
 
 Install this tool using `pip`:
 
-    pip install kgn
+    uv sync
 
 ## Usage
 
 For help, run:
 
-    kgn --help
+    uv run kgn --help
 
 You can also use:
 
-    python -m kgn --help
+    uv run -m kgn --help
 
 ## Example output
 
